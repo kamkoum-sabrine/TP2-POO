@@ -3,7 +3,7 @@
 #include "string"
 using namespace std;
 
-class Abonee
+class Abonne
 {
     private:
         string nom;
@@ -20,10 +20,11 @@ class Abonee
             this->CIN=CIN;
             this->solde=solde;
         }
+        float getSolde(){ return solde; }
 
         void saisir();
         void afficher();
-        void recharge(float solde);
+        void recharger(float solde);
         bool consommer(int secondes=12, float prixMinute=0.18);
 };
 

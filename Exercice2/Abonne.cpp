@@ -1,7 +1,7 @@
-#include "Temps.h"
+#include "Abonne.h"
 using namespace std;
 
-void Abonee::saisir(){
+void Abonne::saisir(){
     cout<<"Saisir le nom ";
     cin>>nom;
     cout<<"Saisir le prenom ";
@@ -14,7 +14,7 @@ void Abonee::saisir(){
     cin>>solde;
 }
 
-void Abonee::afficher(){
+void Abonne::afficher(){
     cout<<"Nom : "<<nom<<endl;
     cout<<"Prenom : "<<prenom<<endl;
     cout<<"Numero appel : "<<numAppel<<endl;
@@ -22,7 +22,11 @@ void Abonee::afficher(){
     cout<<"Solde : "<<solde<<endl;
 }
 
-bool Abonee::consommer(int secondes=12, float prixMinute=0.18){
+void Abonne::recharger(float solde){
+    this->solde+=solde;
+}
+
+bool Abonne::consommer(int secondes, float prixMinute){
     float prix;
     prix=secondes*prixMinute;
     if (solde>prix){
@@ -30,6 +34,4 @@ bool Abonee::consommer(int secondes=12, float prixMinute=0.18){
         return true;
     }
     return false;
-
-
 }

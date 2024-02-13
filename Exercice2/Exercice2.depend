@@ -1,4 +1,12 @@
 # depslib dependency file v1.0
-1189868556 source:f:\1ere ingénieur informatique\semestre 2\tp poo\tp2\exercice2\main.cpp
+1707861667 source:f:\1ere ingénieur informatique\semestre 2\tp poo\tp2\exercice2\main.cpp
 	<iostream>
+	"Abonne.h"
+	"Abonne.cpp"
+
+1707861600 f:\1ere ingénieur informatique\semestre 2\tp poo\tp2\exercice2\abonne.h
+	"string"
+
+1707861652 f:\1ere ingénieur informatique\semestre 2\tp poo\tp2\exercice2\abonne.cpp
+	"Abonne.h"
 
