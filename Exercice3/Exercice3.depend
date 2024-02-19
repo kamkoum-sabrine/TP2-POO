@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1707941252 source:f:\1ere ingénieur informatique\semestre 2\tp poo\tp2\exercice3\main.cpp
+	<iostream>
+	"Pile.h"
+	"Pile.cpp"
+
+1707940487 f:\1ere ingénieur informatique\semestre 2\tp poo\tp2\exercice3\pile.h
+	<vector>
+
+1707941911 f:\1ere ingénieur informatique\semestre 2\tp poo\tp2\exercice3\pile.cpp
+	"Pile.h"
+	<vector>
+

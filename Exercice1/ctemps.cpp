@@ -9,7 +9,7 @@ CTemps::CTemps(int heure,int minute, int seconde){
 
 void CTemps::affiche_anglaise(){
     if (heure-12>=0){
-        cout<<(heure-12)<<":"<<minute<<":"<<seconde<<" pm";
+        cout<<(heure-12)<<":"<<minute<<":"<<seconde<<" pm"<<endl;
     }
     else {
         cout<<heure<<":"<<minute<<":"<<seconde<<" am"<<endl;
@@ -17,7 +17,7 @@ void CTemps::affiche_anglaise(){
 }
 
 void CTemps::affiche_francaise(){
-        cout<<heure<<":"<<minute<<":"<<seconde<<" pm"<<endl;
+        cout<<heure<<":"<<minute<<":"<<seconde<<endl;
 }
 
 int CTemps::inferieur(CTemps &T){
@@ -43,10 +43,17 @@ int CTemps::inferieur(CTemps &T){
 }
 
 void CTemps::saisir(){
-    cout<<"Saisir heure ";
-    cin>>heure;
-    cout<<"Saisir minute ";
-    cin>>minute;
-    cout<<"Saisir seconde ";
-    cin>>seconde;
+    do {
+        cout<<"Saisir heure ";
+        cin>>heure;
+    } while ((heure<0)||(heure>23));
+    do {
+        cout<<"Saisir minute ";
+        cin>>minute;
+    } while((minute<0)||(minute>59));
+    do {
+        cout<<"Saisir seconde ";
+        cin>>seconde;
+    } while((seconde<0)||(seconde>59));
+
 }
